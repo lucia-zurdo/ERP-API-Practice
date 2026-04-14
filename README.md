@@ -3,7 +3,6 @@
 > ASP.NET Core REST API for a business management (ERP) system. Manages clients, suppliers, articles, and purchase/sales invoicing. Secured with Auth0 JWT authentication and backed by SQL Server via Entity Framework Core.
  
 ![Status](https://img.shields.io/badge/status-completed%20%7C%20open%20to%20changes-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4)
  
 ---
