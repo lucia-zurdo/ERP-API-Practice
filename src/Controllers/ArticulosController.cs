@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SegundaAPI.Data;
-using SegundaAPI.DTOs.Articulos;
-using SegundaAPI.Models;
+using src.Models;
+using src.Data;
+using src.DTOs.Articulos;
 
-namespace SegundaAPI.Controllers
+namespace src.Controllers
 {
     /* Controller para la gestión de artículos
      * Permite crear, leer, actualizar y eliminar artículos

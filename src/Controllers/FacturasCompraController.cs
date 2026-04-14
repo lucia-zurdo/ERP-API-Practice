@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SegundaAPI.Data;
-using SegundaAPI.DTOs.FacturasCompra;
-using SegundaAPI.Models;
-using SegundaAPI.Services;
+using src.Models;
+using src.Data;
+using src.DTOs.FacturasCompra;
+using src.Services;
 
-namespace SegundaAPI.Controllers
+namespace src.Controllers
 {
     /* Controller para la gestión de facturas de compra
      * Permite crear, leer, actualizar y eliminar facturas */
