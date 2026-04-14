@@ -147,49 +147,51 @@ Configure `appsettings.json` (or use `appsettings.Development.json` for local ov
 All endpoints require a valid **Bearer token** issued by Auth0.
  
 ### Clients `/api/clientes`
-| Method | Endpoint              | Description          |
-|--------|-----------------------|----------------------|
-| GET    | `/api/clientes`       | Get all clients      |
-| GET    | `/api/clientes/{id}`  | Get client by ID     |
-| POST   | `/api/clientes`       | Create a client      |
-| PUT    | `/api/clientes/{id}`  | Update a client      |
-| DELETE | `/api/clientes/{id}`  | Delete a client      |
+| Method | Endpoint                                   | Description                    |
+|--------|--------------------------------------------|--------------------------------|
+| GET    | `/api/clientes`                            | Get all clients                |
+| GET    | `/api/clientes/cif/{cif}`                  | Get client by CIF              |
+| GET    | `/api/clientes/razonsocial/{razonsocial}`  | Get client by company name     |
+| POST   | `/api/clientes`                            | Create a client                |
+| PUT    | `/api/clientes/{id}`                       | Update a client                |
+| DELETE | `/api/clientes/{id}`                       | Delete a client                |
  
 ### Suppliers `/api/proveedores`
-| Method | Endpoint                  | Description           |
-|--------|---------------------------|-----------------------|
-| GET    | `/api/proveedores`        | Get all suppliers     |
-| GET    | `/api/proveedores/{id}`   | Get supplier by ID    |
-| POST   | `/api/proveedores`        | Create a supplier     |
-| PUT    | `/api/proveedores/{id}`   | Update a supplier     |
-| DELETE | `/api/proveedores/{id}`   | Delete a supplier     |
+| Method | Endpoint                                       | Description                    |
+|--------|------------------------------------------------|--------------------------------|
+| GET    | `/api/proveedores`                             | Get all suppliers              |
+| GET    | `/api/proveedores/cif/{cif}`                   | Get supplier by CIF            |
+| GET    | `/api/proveedores/razonsocial/{razonsocial}`   | Get supplier by company name   |
+| POST   | `/api/proveedores`                             | Create a supplier              |
+| PUT    | `/api/proveedores/{id}`                        | Update a supplier              |
+| DELETE | `/api/proveedores/{id}`                        | Delete a supplier              |
  
 ### Articles `/api/articulos`
-| Method | Endpoint                | Description          |
-|--------|-------------------------|----------------------|
-| GET    | `/api/articulos`        | Get all articles     |
-| GET    | `/api/articulos/{id}`   | Get article by ID    |
-| POST   | `/api/articulos`        | Create an article    |
-| PUT    | `/api/articulos/{id}`   | Update an article    |
-| DELETE | `/api/articulos/{id}`   | Delete an article    |
+| Method | Endpoint                                       | Description                    |
+|--------|------------------------------------------------|--------------------------------|
+| GET    | `/api/articulos`                               | Get all articles               |
+| GET    | `/api/articulos/descripcion/{DescArticulo}`    | Get article by description     |
+| POST   | `/api/articulos`                               | Create an article              |
+| PUT    | `/api/articulos/{id}`                          | Update an article              |
+| DELETE | `/api/articulos/{id}`                          | Delete an article              |
  
 ### Purchase Invoices `/api/facturascompra`
-| Method | Endpoint                       | Description                   |
-|--------|--------------------------------|-------------------------------|
-| GET    | `/api/facturascompra`          | Get all purchase invoices     |
-| GET    | `/api/facturascompra/{id}`     | Get purchase invoice by ID    |
-| POST   | `/api/facturascompra`          | Create a purchase invoice     |
-| PUT    | `/api/facturascompra/{id}`     | Update a purchase invoice     |
-| DELETE | `/api/facturascompra/{id}`     | Delete a purchase invoice     |
+| Method | Endpoint                                       | Description                        |
+|--------|------------------------------------------------|------------------------------------|
+| GET    | `/api/facturascompra`                          | Get all purchase invoices          |
+| GET    | `/api/facturascompra/numero/{nFactura}`          | Get purchase invoice by number   |
+| POST   | `/api/facturascompra`                          | Create a purchase invoice          |
+| PUT    | `/api/facturascompra/{id}`                     | Update a purchase invoice          |
+| DELETE | `/api/facturascompra/{id}`                     | Delete a purchase invoice          |
  
 ### Sales Invoices `/api/facturasventa`
-| Method | Endpoint                     | Description                 |
-|--------|------------------------------|-----------------------------|
-| GET    | `/api/facturasventa`         | Get all sales invoices      |
-| GET    | `/api/facturasventa/{id}`    | Get sales invoice by ID     |
-| POST   | `/api/facturasventa`         | Create a sales invoice      |
-| PUT    | `/api/facturasventa/{id}`    | Update a sales invoice      |
-| DELETE | `/api/facturasventa/{id}`    | Delete a sales invoice      |
+| Method | Endpoint                                       | Description                      |
+|--------|------------------------------------------------|----------------------------------|
+| GET    | `/api/facturasventa`                           | Get all sales invoices           |
+| GET    | `/api/facturasventa/numero/{nFactura}`         | Get sales invoice by number      |
+| POST   | `/api/facturasventa`                           | Create a sales invoice           |
+| PUT    | `/api/facturasventa/{id}`                      | Update a sales invoice           |
+| DELETE | `/api/facturasventa/{id}`                      | Delete a sales invoice           |
  
 > 📄 Full interactive documentation available at `/swagger` when running the API.
  
